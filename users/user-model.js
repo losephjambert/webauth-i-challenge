@@ -4,6 +4,7 @@ module.exports = {
   find,
   findBy,
   add,
+  findById,
 };
 
 function find() {
@@ -14,6 +15,14 @@ function findBy(filter) {
   return knex('users').where(filter);
 }
 
-function add(user) {
-  return knex('users').insert(user);
+async function add(user) {
+  const [id] = await knex('users').insert(user, 'id');
+  return findById(id);
+}
+
+function findById(id) {
+  return knex('users')
+    .select('id', 'username')
+    .where({ id })
+    .first();
 }
