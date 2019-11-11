@@ -22,9 +22,12 @@ Plan:
 4. Scaffold router root (api-router.js) ✔
 5. Scaffold db ✔
 6. Scaffold auth router ✔
-7. Set up database queries for add, find, findBy(filter), findById
-8. Scaffold user routes
-9. Scaffold Middleware
+7. Scaffold user router ✔
+8. Set up database queries for add, find, findBy(filter), findById ✔
+9. Scaffold global Middleware ✔
+10. Create `/auth/register` ✔
+11. Create `/auth/login`
+12. Scaffold requiresAuth
 
 ### Complete the following endpoints:
 

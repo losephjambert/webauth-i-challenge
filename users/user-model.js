@@ -12,7 +12,9 @@ function find() {
 }
 
 function findBy(filter) {
-  return knex('users').where(filter);
+  return knex('users')
+    .where(filter)
+    .first();
 }
 
 async function add(user) {

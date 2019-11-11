@@ -28,4 +28,26 @@ router.post('/register', async (req, res) => {
   }
 });
 
+router.post('/login', async (req, res) => {
+  const credentials = req.body;
+  const { password, username } = credentials;
+
+  if (password && username) {
+    try {
+      const user = await Users.findBy({ username });
+      bcrypt.compare(credentials.password, user.password, (err, hashMatch) => {
+        if (hashMatch) {
+          res.status(200).json({ username: user.username, id: user.id });
+        } else {
+          res.status(401).json({ message: `Invalid credentials` });
+        }
+      });
+    } catch (error) {
+      res.status(500).json({ message: `Failed to authenticate user with database.` });
+    }
+  } else {
+    res.status(400).json({ message: `user credentials required to login.` });
+  }
+});
+
 module.exports = router;
