@@ -26,7 +26,7 @@ Plan:
 8. Set up database queries for add, find, findBy(filter), findById ✔
 9. Scaffold global Middleware ✔
 10. Create `/auth/register` ✔
-11. Create `/auth/login`
+11. Create `/auth/login` ✔
 12. Scaffold requiresAuth
 
 ### Complete the following endpoints:
