@@ -27,7 +27,7 @@ Plan:
 9. Scaffold global Middleware ✔
 10. Create `/auth/register` ✔
 11. Create `/auth/login` ✔
-12. Scaffold requiresAuth
+12. Scaffold requiresAuth ✔
 
 ### Complete the following endpoints:
 
