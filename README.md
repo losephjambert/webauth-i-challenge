@@ -16,11 +16,14 @@ Use `Node.js`, `Express` and `Knex` to build an API that provides **Register** a
 
 Plan:
 
-1. Install dependencies (express, knex, sqlite3, helmet, cors, bcrypt)
-2. Scaffold express app entry point (index.js)
-3. Scaffold server root file (server.sj)
-4. Scaffold Middleware
-5. Scaffold router root (api-router.js)
+1. Install dependencies (express, knex, sqlite3, helmet, cors, bcrypt) ✔
+2. Scaffold express app entry point (index.js) ✔
+3. Scaffold server root file (server.sj) ✔
+4. Scaffold router root (api-router.js) ✔
+5. Scaffold db
+6. Set up database queries for add, find, findBy(filter), findById
+7. Scaffold user routes
+8. Scaffold Middleware
 
 ### Complete the following endpoints:
 
