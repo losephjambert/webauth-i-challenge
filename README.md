@@ -21,9 +21,10 @@ Plan:
 3. Scaffold server root file (server.sj) ✔
 4. Scaffold router root (api-router.js) ✔
 5. Scaffold db ✔
-6. Set up database queries for add, find, findBy(filter), findById
-7. Scaffold user routes
-8. Scaffold Middleware
+6. Scaffold auth router ✔
+7. Set up database queries for add, find, findBy(filter), findById
+8. Scaffold user routes
+9. Scaffold Middleware
 
 ### Complete the following endpoints:
 
