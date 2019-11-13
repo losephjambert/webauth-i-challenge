@@ -14,7 +14,7 @@ Use `Node.js`, `Express` and `Knex` to build an API that provides **Register** a
 
 ## Assignment
 
-Plan:
+Plan (Monday):
 
 1. Install dependencies (express, knex, sqlite3, helmet, cors, bcrypt) ✔
 2. Scaffold express app entry point (index.js) ✔
@@ -28,6 +28,10 @@ Plan:
 10. Create `/auth/register` ✔
 11. Create `/auth/login` ✔
 12. Scaffold requiresAuth ✔
+
+Plan (Tuesday):
+
+1. 
 
 ### Complete the following endpoints:
 
