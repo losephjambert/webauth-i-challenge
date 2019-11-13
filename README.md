@@ -29,9 +29,6 @@ Plan (Monday):
 11. Create `/auth/login` ✔
 12. Scaffold requiresAuth ✔
 
-Plan (Tuesday):
-
-1. 
 
 ### Complete the following endpoints:
 
@@ -42,6 +39,10 @@ Plan (Tuesday):
 | GET    | /api/users    | If the user is logged in, respond with an array of all the users contained in the database. If the user is not logged in repond with the correct status code and the message: 'You shall not pass!'.                                                                                                |
 
 ### After we cover the lecture on **sessions** and **cookies**, use them to keep a record of logged in users across requests.
+
+Plan (Tuesday):
+
+1. 
 
 ## Stretch Problem
 
