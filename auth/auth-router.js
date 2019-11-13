@@ -13,10 +13,11 @@ router.post('/register', async (req, res) => {
 
   if (password && username) {
     try {
-      bcrypt.genSalt(10, async function(err, salt) {
-        bcrypt.hash(password, salt, async function(err, hash) {
+      bcrypt.genSalt(10, async function (err, salt) {
+        bcrypt.hash(password, salt, async function (err, hash) {
           userInfo.password = hash;
           const newUser = await Users.add(userInfo);
+          req.session.username = newUser.username;
           res.status(201).json(newUser);
         });
       });
@@ -37,7 +38,8 @@ router.post('/login', async (req, res) => {
       const user = await Users.findBy({ username });
       bcrypt.compare(credentials.password, user.password, (err, hashMatch) => {
         if (hashMatch) {
-          res.status(200).json({ username: user.username, id: user.id });
+          req.session.username = user.username;
+          res.status(200).json({ username: user.username, id: user.id, session: req.session });
         } else {
           res.status(401).json({ message: `Invalid credentials` });
         }
